@@ -24,7 +24,7 @@ describe('arrayLength', () => {
 });
 
 describe('arrayPush', () => {
-  test('it should return [5,6,7] when array is [5,6] and element is 7', () => {
+  test('it should return 3 when array is [5,6] and element is 7', () => {
     const x = [5, 6];
     const y = 7;
     const expected = 3;
@@ -32,7 +32,7 @@ describe('arrayPush', () => {
     expect(r).toBe(expected);
   });
 
-  test('it should return [13,25,32,54,76,43] when array is [13,25,32,54,76] and element is 43', () => {
+  test('it should return 6 when array is [13,25,32,54,76] and element is 43', () => {
     const x = [13, 25, 32, 54, 76];
     const y = 43;
     const expected = 6;
@@ -40,7 +40,7 @@ describe('arrayPush', () => {
     expect(r).toBe(expected);
   });
 
-  test('it should return ["perro","gato","elefante"] when array is ["perro","gato"] and element is "elefante"', () => {
+  test('it should return 3 when array is ["perro","gato"] and element is "elefante"', () => {
     const x = ['perro', 'gato'];
     const y = 'elefante';
     const expected = 3;
