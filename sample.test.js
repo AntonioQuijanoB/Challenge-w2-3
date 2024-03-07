@@ -66,7 +66,7 @@ describe('indexOf', () => {
     expect(r).toBe(expected);
   });
 
-  test('it should return ["perro","gato","elefante"] when array is ["perro","gato"] and element is "elefante"', () => {
+  test('it should return 2 when array is ["perro","gato","elefante"] and element is "elefante"', () => {
     const x = ['perro', 'gato', 'elefante'];
     const y = 'elefante';
     const expected = 2;

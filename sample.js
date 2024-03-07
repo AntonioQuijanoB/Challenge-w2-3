@@ -8,6 +8,8 @@ export function arrayLength(array) {
 }
 
 export function arrayPush(array, ...elements) {
+  /*array[arrayLength(newArray)] = element
+  return arrayLength(array);*/
   const elementLength = elements.length;
   for (let i = 0; i < elementLength; i++) {
     array[arrayLength(array)] = elements[i];
