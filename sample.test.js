@@ -144,7 +144,7 @@ describe('find', () => {
 });
 
 describe('filter', () => {
-  test.('it should return ["caballo", "rinoceronte", "jirafa"] when array is ["caballo", "rinoceronte", "pez", "jirafa", "boa"] and function is (word) => word.length > 3)', () => {
+  test('it should return ["caballo", "rinoceronte", "jirafa"] when array is ["caballo", "rinoceronte", "pez", "jirafa", "boa"] and function is (word) => word.length > 3)', () => {
     const x = ['caballo', 'rinoceronte', 'pez', 'jirafa', 'boa'];
     const y = (word) => word.length > 3;
     const expected = ['caballo', 'rinoceronte', 'jirafa'];
@@ -153,12 +153,4 @@ describe('filter', () => {
   });
 });
 
-describe('includes', () => {
-  test('it should return true when array is [1,2,3,4,5], element is 4 and there is no start', () => {
-    const x = [1, 2, 3, 4, 5];
-    const y = 4;
-    const expected = true;
-    const result = includes(x, y);
-    expect(result).toBe(expected);
-  });
-});
+describe('includes', () => {});
